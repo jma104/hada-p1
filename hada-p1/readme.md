@@ -1,5 +1,7 @@
 ﻿Javier Martínez Albaladejo
 
+HADA - Assignment 1: Using git
+
 P1.
 	The -n option in the revert command means that the changes are not commited after reverting.
 P2.
