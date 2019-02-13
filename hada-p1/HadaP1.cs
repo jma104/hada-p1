@@ -14,6 +14,12 @@ namespace hada_p1
             return s / 60;
         }
 
+        public static double Minutes2Seconds(double m)
+        {
+            if (m == 0) return 0;
+            return m * 60;
+        }
+
         static void Main(string[] args)
         {
         }
