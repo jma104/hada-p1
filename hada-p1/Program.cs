@@ -12,13 +12,19 @@ namespace hada_p1
         {
             do
             {
-                Console.Write("From which unit do you want to start ('m' for minutes, 's' for seconds)? ");
+                Console.Write("From which unit do you want to start ('m' for minutes, 's' for seconds, 'h' for hours)? ");
                 string answer=Console.ReadLine();
                 if (answer == "m")
                 {
                     Console.Write("Enter the amount of minutes: ");
                     double minutes = double.Parse(Console.ReadLine());
                     Console.WriteLine(minutes + " minutes are " + HadaP1.Minutes2Seconds(minutes) + " seconds.");
+                }
+                else if (answer=="h")
+                {
+                    Console.Write("Enter the amount of hours: ");
+                    double hours = double.Parse(Console.ReadLine());
+                    Console.WriteLine(hours + " hours are " + HadaP1.Hours2Minutes(hours) + " minutes.");
                 }
                 else
                 {
